@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.js"],"names":["myFunc","console","log"],"mappings":"AACA,SAASA,MAAT,GAAkB;AACdC,EAAAA,OAAO,CAACC,GAAR,CAAY,MAAZ;AACH","file":"main.1f19ae8e.js","sourceRoot":"..\\src","sourcesContent":["\r\nfunction myFunc() {\r\n    console.log(\"klik\")\r\n}\r\n\r\n"]}

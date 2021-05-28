@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="theme-1" lang="en">  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -14,18 +14,67 @@
 </head>
 <body>
 
+  <div class="calc-grid">
 
+      <div class="calc-header">
+        <div class="calc-title">calc</div>
+
+        <div class="calc-toggle-btn">
+          <div class="toggle-btn-wrapper">
+            <div data-theme="1" class="checkmark-area" id="theme-1" onclick="toggleBtn(1)"><div id="checkmark"></div></div>
+            <div data-theme="2" class="checkmark-area" id="theme-2" onclick="toggleBtn(2)"></div>
+            <div data-theme="3" class="checkmark-area" id="theme-3" onclick="toggleBtn(3)"></div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="calc-screen">399,981</div>
+      
+      <div class="calc-keypad">
+        <div class="keypad-btn btn-7">7</div>
+        <div class="keypad-btn btn-8">8</div>
+        <div class="keypad-btn btn-9">9</div>
+        <div class="keypad-btn btn-del">del</div>
+
+        <div class="keypad-btn btn-4">4</div>
+        <div class="keypad-btn btn-5">5</div>
+        <div class="keypad-btn btn-6">6</div>
+        <div class="keypad-btn btn-plus">+</div>
+
+        <div class="keypad-btn btn-1">1</div>
+        <div class="keypad-btn btn-2">2</div>
+        <div class="keypad-btn btn-3">3</div>
+        <div class="keypad-btn btn-minus">-</div>
+
+        <div class="keypad-btn btn-dot">.</div>
+        <div class="keypad-btn btn-0">0</div>
+        <div class="keypad-btn btn-divide">/</div>
+        <div class="keypad-btn btn-multiply">x</div>
+
+        <div class="keypad-btn btn-reset">reset</div>
+        <div class="keypad-btn btn-result">=</div>
+     
+      </div> 
+
+  </div>
+
+  <script>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-
-  <div class="grid">
-
+  function toggleBtn(e) {
+    const htmlEl = document.documentElement
+    const el = document.getElementById("checkmark")
+    let targetEl = document.getElementById('theme-' + e)
     
-  </div>
+    htmlEl.setAttribute('data-theme', 'theme-' + e)
+    targetEl.appendChild(el)
 
+}
+
+
+
+  </script>
 
 </body>
 </html>

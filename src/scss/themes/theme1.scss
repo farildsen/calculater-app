@@ -1,0 +1,27 @@
+@import './functions';
+
+$theme1: (
+
+    //backgrounds
+    main-background: color(clr-fiord)
+    toogle-background: color(clr-ebony-clay)
+    keypad-background: color(clr-ebony-clay)
+    screen-background: color(clr-mirage)
+
+    //keys
+    key-background-primary: color(clr-lynch)
+    key-shadow-primary: color(clr-east-bay)
+
+    key-background-secondary: color(clr-persian-red)
+    key-shadow-secondary: color(clr-old-brick)
+    
+    key-background-tertiary: color(clr-pearl-bush)
+    key-shadow-tertiary: color(clr-napa)
+
+    toggle: color(clr-persian-red)
+
+    //text
+    text-primary: color(clr-river-bed)
+    text-secondary: color(clr-white)
+
+);

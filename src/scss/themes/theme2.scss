@@ -1,0 +1,27 @@
+@import './functions';
+
+$theme2: (
+
+    //backgrounds
+    main-background: color(clr-mercury)
+    toogle-background: color(clr-swiss-cofee)
+    keypad-background: color(clr-swiss-cofee)
+    screen-background: color(clr-gallery)
+
+    //keys
+    key-background-primary: color(clr-paradiso)
+    key-shadow-primary: color(clr-blumine)
+
+    key-background-secondary: color(clr-burnt-orange)
+    key-shadow-secondary: color(clr-peru-tan)
+
+    key-background-tertiary: color(clr-westar)
+    key-shadow-tertiary: color(clr-zorba)
+
+    toggle: color(clr-burnt-orange)
+
+    //text
+    text-primary: color(clr-armadillo)
+    text-secondary: color(clr-white)
+
+);
