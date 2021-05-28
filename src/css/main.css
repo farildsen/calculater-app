@@ -60,7 +60,7 @@ html[data-theme='theme-1'] {
     --clr-keypad-bg: var(--clr-ebony-clay);
     --clr-screen-bg: var(--clr-mirage);
 
-    // keys
+    /* keys */
     --clr-primary-key-bg: var(--clr-pearl-bush);
     --clr-secondary-key-bg: var(--clr-lynch);
     --clr-tertiary-key-bg: var(--clr-persian-red);
@@ -69,10 +69,10 @@ html[data-theme='theme-1'] {
     --clr-secondary-key-shadow: var(--clr-east-bay);
     --clr-tertiary-key-shadow: var(--clr-old-brick);
 
-    //toggle
+    /* toggle */
     --clr-toggle: var(--clr-persian-red);
 
-    //tetx 
+    /* text */
     --clr-primary-text: var(--clr-river-bed);
     --clr-secondary-text: var(--clr-white);
     --clr-tertiary-text: var(--clr-white);
@@ -86,7 +86,7 @@ html[data-theme='theme-2'] {
     --clr-keypad-bg: var(--clr-swiss-cofee);
     --clr-screen-bg: var(--clr-gallery);
 
-    // keys
+    /* keys */
     
     --clr-primary-key-bg: var(--clr-westar);
     --clr-secondary-key-bg: var(--clr-paradiso);
@@ -97,10 +97,10 @@ html[data-theme='theme-2'] {
     --clr-tertiary-key-shadow: var(--clr-peru-tan);
     
 
-    //toggle
+    /* toggle */
     --clr-toggle: var(--clr-burnt-orange);
 
-    //tetx 
+    /* text */ 
     --clr-primary-text: var(--clr-armadillo);
     --clr-secondary-text: var(--clr-white);
     --clr-tertiary-text: var(--clr-white);
@@ -114,7 +114,7 @@ html[data-theme='theme-3'] {
     --clr-keypad-bg: var(--clr-dark-violet);
     --clr-screen-bg: var(--clr-dark-violet);
 
-    // keys
+    /* keys */
     --clr-primary-key-bg: var(--clr-grape);
     --clr-secondary-key-bg: var(--clr-windsor);
     --clr-tertiary-key-bg: var(--clr-robins-egg-blue);
@@ -123,10 +123,10 @@ html[data-theme='theme-3'] {
     --clr-secondary-key-shadow: var(--clr-electric-violet);
     --clr-tertiary-key-shadow: var(--clr-aquamarine);
 
-    //toggle
+    /* toggle */
     --clr-toggle: var(--clr-robins-egg-blue);
 
-    //tetx 
+    /* text */ 
     --clr-primary-text: var(--clr-bright-sun);
     --clr-secondary-text: var(--clr-white);
     --clr-tertiary-text: var(--clr-shark);
@@ -199,7 +199,7 @@ padding: 0;
 
 
 
-//tri-state-button
+/* tri-state-button */
 
 .toggle-btn-wrapper {
     position: absolute;
@@ -251,7 +251,7 @@ padding: 0;
 }
 
 
-// keypad
+/* keypad */
 
 .keypad-btn {
     display: flex;
@@ -267,7 +267,7 @@ padding: 0;
     cursor: pointer;
 }
 
-//1st row
+/* 1st row */
 
 .btn-7 {
     grid-column: 1 / 2;
@@ -294,7 +294,7 @@ padding: 0;
     grid-row: 1 / 2;
 }
 
-//2nd row
+/* 2nd row */
 
 .btn-4 {
     grid-column: 1 / 2;
@@ -316,7 +316,7 @@ padding: 0;
     grid-row: 2 / 3;
 }
 
-//3rd row
+/* 3rd row */
 
 .btn-1 {
     grid-column: 1 / 2;
@@ -338,7 +338,7 @@ padding: 0;
     grid-row: 3 / 4;
 }
 
-//4th row
+/* 4th row */
 
 .btn-dot {
     grid-column: 1 / 2;
@@ -361,7 +361,7 @@ padding: 0;
 }
 
 
-//5th row
+/* 5th row */
 
 .btn-reset {
     background: var(--clr-secondary-key-bg);
