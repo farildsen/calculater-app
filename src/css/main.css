@@ -65,52 +65,72 @@ html[data-theme='theme-1'] {
     --clr-secondary-key-bg: var(--clr-lynch);
     --clr-tertiary-key-bg: var(--clr-persian-red);
 
+    --clr-primary-key-shadow: var(--clr-napa);
+    --clr-secondary-key-shadow: var(--clr-east-bay);
+    --clr-tertiary-key-shadow: var(--clr-old-brick);
+
     //toggle
     --clr-toggle: var(--clr-persian-red);
 
     //tetx 
     --clr-primary-text: var(--clr-river-bed);
     --clr-secondary-text: var(--clr-white);
+    --clr-tertiary-text: var(--clr-white);
+    --clr-screen-text: var(--clr-white);
 }
 
 html[data-theme='theme-2'] {
     
     background: var(--clr-mercury);  
-    --clr-toggle-bg: var(--clr-ebony-clay);
-    --clr-keypad-bg: var(--clr-ebony-clay);
-    --clr-screen-bg: var(--clr-mirage);
+    --clr-toggle-bg: var(--clr-swiss-cofee);
+    --clr-keypad-bg: var(--clr-swiss-cofee);
+    --clr-screen-bg: var(--clr-gallery);
 
     // keys
-    --clr-primary-key-bg: var(--clr-pearl-bush);
-    --clr-secondary-key-bg: var(--clr-lynch);
-    --clr-tertiary-key-bg: var(--clr-persian-red);
+    
+    --clr-primary-key-bg: var(--clr-westar);
+    --clr-secondary-key-bg: var(--clr-paradiso);
+    --clr-tertiary-key-bg: var(--clr-burnt-orange);
+
+    --clr-primary-key-shadow: var(--clr-zorba);
+    --clr-secondary-key-shadow: var(--clr-blumine);
+    --clr-tertiary-key-shadow: var(--clr-peru-tan);
+    
 
     //toggle
-    --clr-toggle: var(--clr-persian-red);
+    --clr-toggle: var(--clr-burnt-orange);
 
     //tetx 
-    --clr-primary-text: var(--clr-river-bed);
+    --clr-primary-text: var(--clr-armadillo);
     --clr-secondary-text: var(--clr-white);
+    --clr-tertiary-text: var(--clr-white);
+    --clr-screen-text: var(--clr-armadillo);
 }
 
 html[data-theme='theme-3'] {
     
     background: var(--clr-very-dark-violet);  
-    --clr-toggle-bg: var(--clr-ebony-clay);
-    --clr-keypad-bg: var(--clr-ebony-clay);
-    --clr-screen-bg: var(--clr-mirage);
+    --clr-toggle-bg: var(--clr-dark-violet);
+    --clr-keypad-bg: var(--clr-dark-violet);
+    --clr-screen-bg: var(--clr-dark-violet);
 
     // keys
-    --clr-primary-key-bg: var(--clr-pearl-bush);
-    --clr-secondary-key-bg: var(--clr-lynch);
-    --clr-tertiary-key-bg: var(--clr-persian-red);
+    --clr-primary-key-bg: var(--clr-grape);
+    --clr-secondary-key-bg: var(--clr-windsor);
+    --clr-tertiary-key-bg: var(--clr-robins-egg-blue);
+
+    --clr-primary-key-shadow: var(--clr-seance);
+    --clr-secondary-key-shadow: var(--clr-electric-violet);
+    --clr-tertiary-key-shadow: var(--clr-aquamarine);
 
     //toggle
-    --clr-toggle: var(--clr-persian-red);
+    --clr-toggle: var(--clr-robins-egg-blue);
 
     //tetx 
-    --clr-primary-text: var(--clr-river-bed);
+    --clr-primary-text: var(--clr-bright-sun);
     --clr-secondary-text: var(--clr-white);
+    --clr-tertiary-text: var(--clr-shark);
+    --clr-screen-text: var(--clr-bright-sun);
 }
 
 
@@ -140,7 +160,7 @@ padding: 0;
 .calc-title {
     display: flex;
     align-items: center;
-    color: white;
+    color: var(--clr-screen-text);
     font-size: 1.35em;
     font-weight: 700;
     padding-top: 0.7rem;
@@ -155,7 +175,7 @@ padding: 0;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     background: var(--clr-screen-bg);
-    color: var(--clr-secondary-text);
+    color: var(--clr-screen-text);
     font-size: 2em;
     font-weight: 700;
     text-align: right;
@@ -215,7 +235,7 @@ padding: 0;
     top: -0.8rem;
     font-size: 0.5em;
     font-weight: 700;
-    color: var(--clr-secondary-text);
+    color: var(--clr-screen-text);
 }
 
 .toggle-btn-wrapper::before {
@@ -227,12 +247,8 @@ padding: 0;
     letter-spacing: 0.08rem;
     font-size: 0.5em;
     font-weight: 700;
-    color: var(--clr-secondary-text);
+    color: var(--clr-screen-text);
 }
-
-
-
-
 
 
 // keypad
@@ -244,9 +260,11 @@ padding: 0;
     background: var(--clr-primary-key-bg);
     border-radius: 0.4rem;
     padding-top: 0.2rem;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: 700;
     color: var(--clr-primary-text);
+    box-shadow: 0 0.2rem 0 var(--clr-primary-key-shadow);
+    cursor: pointer;
 }
 
 //1st row
@@ -268,6 +286,7 @@ padding: 0;
 
 .btn-del {
     background: var(--clr-secondary-key-bg);
+    box-shadow: 0 0.2rem 0 var(--clr-secondary-key-shadow);
     color: var(--clr-secondary-text);
     font-size: 0.9em;
     text-transform: uppercase;
@@ -346,6 +365,7 @@ padding: 0;
 
 .btn-reset {
     background: var(--clr-secondary-key-bg);
+    box-shadow: 0 0.2rem 0 var(--clr-secondary-key-shadow);
     color: var(--clr-secondary-text);
     font-size: 0.9em;
     letter-spacing: 0.1rem;
@@ -356,7 +376,8 @@ padding: 0;
 
 .btn-result {
     background: var(--clr-tertiary-key-bg);
-    color: var(--clr-secondary-text);
+    box-shadow: 0 0.2rem 0 var(--clr-tertiary-key-shadow);
+    color: var(--clr-tertiary-text);
     font-size: 0.9em;
     grid-column: 3 / 5;
     grid-row: 5 / 6;
