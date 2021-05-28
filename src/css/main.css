@@ -130,6 +130,18 @@ html[data-theme="theme-3"] {
 body {
   margin: 0;
   padding: 0;
+  user-select: none;
+}
+
+.attribution { 
+  font-size: 0.25em; 
+  text-align: center; 
+  color: var(--clr-screen-text);
+  margin-top: 0.5rem;
+}
+
+.attribution a { 
+    color: var(--clr-screen-text) 
 }
 
 .calc-grid {

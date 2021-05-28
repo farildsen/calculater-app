@@ -9,42 +9,32 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="../images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="css/main.css" />
 
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 
     <title>Frontend Mentor | Calculator app</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    
   </head>
   <body>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Frank Arildsen</a>.
+    </div>
+
     <div class="calc-grid">
       <div class="calc-header">
         <div class="calc-title">calc</div>
         <div class="calc-toggle-btn">
           <div class="toggle-btn-wrapper">
-            <div
-              data-theme="1"
-              class="checkmark-area"
-              id="theme-1"
-              onclick="toggleBtn(1)"
-            >
-              <div id="checkmark"></div>
-            </div>
-            <div
-              data-theme="2"
-              class="checkmark-area"
-              id="theme-2"
-              onclick="toggleBtn(2)"
-            ></div>
-            <div
-              data-theme="3"
-              class="checkmark-area"
-              id="theme-3"
-              onclick="toggleBtn(3)"
-            ></div>
+            <div class="checkmark-area" id="theme-1"></div>
+            <div class="checkmark-area" id="theme-2"></div>
+            <div class="checkmark-area" id="theme-3"></div>
           </div>
         </div>
       </div>
