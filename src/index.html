@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="theme-1" lang="en">
+<html data-theme="1" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,52 +18,55 @@
     <title>Frontend Mentor | Calculator app</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    
+
   </head>
   <body>
 
-    <div class="attribution">
+    <header>
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Frank Arildsen</a>.
-    </div>
+    </header>
 
     <div class="calc-grid">
       <div class="calc-header">
         <div class="calc-title">calc</div>
         <div class="calc-toggle-btn">
           <div class="toggle-btn-wrapper">
-            <div class="checkmark-area" id="theme-1"></div>
-            <div class="checkmark-area" id="theme-2"></div>
-            <div class="checkmark-area" id="theme-3"></div>
+            <div data-area-theme="1" class="checkmark-area"></div>
+            <div data-area-theme="2" class="checkmark-area"></div>
+            <div data-area-theme="3" class="checkmark-area"></div>
           </div>
         </div>
       </div>
 
-      <div class="calc-screen">399,981</div>
+      <div class="calc-screen">
+        <div class="previous-operand" data-previous-operand></div>
+        <div class="current-operand" data-current-operand></div>
+      </div>
 
       <div class="calc-keypad">
-        <div class="keypad-btn btn-7">7</div>
-        <div class="keypad-btn btn-8">8</div>
-        <div class="keypad-btn btn-9">9</div>
-        <div class="keypad-btn btn-del" data-action="del">del</div>
+        <button class="keypad-btn btn-7" data-number>7</button>
+        <button class="keypad-btn btn-8" data-number>8</button>
+        <button class="keypad-btn btn-9" data-number>9</button>
+        <button class="keypad-btn btn-delete" data-delete>del</button>
 
-        <div class="keypad-btn btn-4">4</div>
-        <div class="keypad-btn btn-5">5</div>
-        <div class="keypad-btn btn-6">6</div>
-        <div class="keypad-btn btn-plus" data-action="add">+</div>
+        <button class="keypad-btn btn-4" data-number>4</button>
+        <button class="keypad-btn btn-5" data-number>5</button>
+        <button class="keypad-btn btn-6" data-number>6</button>
+        <button class="keypad-btn btn-plus" data-operation="+">+</button>
 
-        <div class="keypad-btn btn-1">1</div>
-        <div class="keypad-btn btn-2">2</div>
-        <div class="keypad-btn btn-3">3</div>
-        <div class="keypad-btn btn-minus" data-action="minus">-</div>
+        <button class="keypad-btn btn-1" data-number>1</button>
+        <button class="keypad-btn btn-2" data-number>2</button>
+        <button class="keypad-btn btn-3" data-number>3</button>
+        <button class="keypad-btn btn-minus" data-operation="-">-</button>
 
-        <div class="keypad-btn btn-dot">.</div>
-        <div class="keypad-btn btn-0">0</div>
-        <div class="keypad-btn btn-divide" data-action="divide">/</div>
-        <div class="keypad-btn btn-multiply" data-action="multiply">x</div>
+        <button class="keypad-btn btn-decimal" data-number>.</button>
+        <button class="keypad-btn btn-0" data-number>0</button>
+        <button class="keypad-btn btn-divide" data-operation="/">/</button>
+        <button class="keypad-btn btn-multiply" data-operation="*">x</button>
 
-        <div class="keypad-btn btn-reset">reset</div>
-        <div class="keypad-btn btn-result">=</div>
+        <button class="keypad-btn btn-reset" data-reset>reset</button>
+        <button class="keypad-btn btn-equals" data-equals>=</button>
       </div>
     </div>
   </body>
